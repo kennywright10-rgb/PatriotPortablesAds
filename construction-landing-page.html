@@ -298,7 +298,7 @@
     <div>
       <div class="quote-form">
         <h3>Request a Job Site Quote</h3>
-        <form action="https://formspree.io/f/xjgepbqq" method="POST">
+        <form action="https://formspree.io/f/xjgepbqq" method="POST" id="quote-form-el">
           <div class="form-row">
             <div class="form-group"><label>First Name *</label><input type="text" name="first_name" placeholder="John" required></div>
             <div class="form-group"><label>Last Name *</label><input type="text" name="last_name" placeholder="Smith" required></div>
@@ -329,7 +329,7 @@
             </select>
           </div>
           <div class="form-group"><label>Additional Details</label><textarea name="message" placeholder="e.g. Building 3 custom homes in Alpharetta, need 1 unit per site starting next Monday..."></textarea></div>
-          <input type="hidden" name="_next" value="https://emergency.patriotportables.com/thank-you">
+          
           <button type="submit" class="submit-btn">Get My Job Site Quote →</button>
           <p class="form-disclaimer">No spam. We'll only contact you about your rental request.</p>
         </form>
@@ -408,6 +408,29 @@
 <script>
   const observer = new IntersectionObserver(entries => entries.forEach(el => { if (el.isIntersecting) el.target.classList.add('visible'); }), { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+<script>
+  const formEl = document.getElementById("quote-form-el");
+  if (formEl) {
+    formEl.addEventListener("submit", async function(e) {
+      e.preventDefault();
+      const data = new FormData(formEl);
+      try {
+        const res = await fetch("https://formspree.io/f/xjgepbqq", {
+          method: "POST",
+          body: data,
+          headers: { "Accept": "application/json" }
+        });
+        if (res.ok) {
+          window.location.href = "/thank-you";
+        } else {
+          alert("There was a problem submitting the form. Please call us at (678) 456-3488.");
+        }
+      } catch(err) {
+        alert("There was a problem submitting the form. Please call us at (678) 456-3488.");
+      }
+    });
+  }
 </script>
 </body>
 </html>
