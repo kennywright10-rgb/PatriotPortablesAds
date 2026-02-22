@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You | Patriot Portables</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<!-- Google Ads Conversion Tag — REPLACE with your actual tag -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-XXXXXXXXX');
+  gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/XXXXXXXXX'});
+</script> -->
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue: #1B4FA8; --blue-dark: #0D2B6B;
+    --red: #C8102E; --red-dark: #9E0B24;
+    --white: #FFFFFF; --off-white: #F4F7FC;
+    --gray: #6B7280; --light-gray: #E5E7EB; --dark-text: #0D1F3C;
+  }
+  body { font-family: 'Source Sans 3', sans-serif; background: var(--off-white); color: var(--dark-text); min-height: 100vh; display: flex; flex-direction: column; }
+  .top-bar { background: var(--blue); color: white; text-align: center; padding: 10px 20px; font-family: 'Oswald', sans-serif; font-size: 0.9rem; letter-spacing: 0.06em; }
+  .site-header { background: white; padding: 14px 32px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--light-gray); }
+  .site-header img { height: 60px; }
+  .header-phone { background: var(--red); color: white; font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 12px 24px; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+
+  .main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 60px 20px; }
+  .card { background: white; border-radius: 12px; padding: 60px 48px; max-width: 580px; width: 100%; text-align: center; box-shadow: 0 8px 40px rgba(0,0,0,0.08); border-top: 5px solid var(--blue); }
+
+  .checkmark { width: 72px; height: 72px; background: var(--blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 28px; animation: pop 0.4s ease; }
+  @keyframes pop { 0% { transform: scale(0); } 70% { transform: scale(1.1); } 100% { transform: scale(1); } }
+  .checkmark svg { color: white; }
+
+  h1 { font-family: 'Oswald', sans-serif; font-size: 2.2rem; font-weight: 700; text-transform: uppercase; color: var(--dark-text); margin-bottom: 16px; line-height: 1.1; }
+  .subtitle { font-size: 1.1rem; color: var(--gray); line-height: 1.7; margin-bottom: 36px; }
+  .subtitle strong { color: var(--dark-text); }
+
+  .what-next { background: var(--off-white); border-radius: 8px; padding: 28px; margin-bottom: 36px; text-align: left; }
+  .what-next h3 { font-family: 'Oswald', sans-serif; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray); margin-bottom: 16px; }
+  .next-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+  .next-item:last-child { margin-bottom: 0; }
+  .next-num { width: 26px; height: 26px; background: var(--blue); color: white; border-radius: 50%; font-family: 'Oswald', sans-serif; font-size: 0.8rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+  .next-item p { font-size: 0.95rem; color: var(--dark-text); line-height: 1.5; }
+
+  .cta-phone { display: inline-flex; align-items: center; gap: 10px; background: var(--red); color: white; font-family: 'Oswald', sans-serif; font-size: 1.1rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 16px 36px; border-radius: 4px; text-decoration: none; transition: background 0.2s, transform 0.1s; box-shadow: 0 4px 16px rgba(200,16,46,0.3); margin-bottom: 16px; }
+  .cta-phone:hover { background: var(--red-dark); transform: translateY(-1px); }
+  .phone-note { font-size: 0.85rem; color: var(--gray); }
+
+  footer { background: var(--blue-dark); padding: 24px 20px; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem; }
+  footer a { color: rgba(255,255,255,0.6); }
+
+  @media (max-width: 600px) {
+    .card { padding: 40px 24px; }
+    .site-header { padding: 14px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">Support Our Heroes: Proceeds Benefit Wounded Warriors &nbsp;|&nbsp; Locally Owned &nbsp;|&nbsp; Same Day Delivery</div>
+
+<header class="site-header">
+  <img src="https://www.patriotportables.com/logo.png" alt="Patriot Portables" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+  <div style="display:none; font-family:'Oswald',sans-serif; font-size:1.4rem; font-weight:700; color:var(--blue);">PATRIOT PORTABLES</div>
+  <a href="tel:6784563488" class="header-phone">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    678-456-3488
+  </a>
+</header>
+
+<main class="main">
+  <div class="card">
+    <div class="checkmark">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+    </div>
+    <h1>Quote Request<br>Received!</h1>
+    <p class="subtitle">Thanks for reaching out. <strong>We'll be in touch within minutes</strong> during business hours — or first thing in the morning if you submitted after hours.</p>
+
+    <div class="what-next">
+      <h3>What happens next</h3>
+      <div class="next-item">
+        <div class="next-num">1</div>
+        <p>We review your request and confirm availability for your location and dates.</p>
+      </div>
+      <div class="next-item">
+        <div class="next-num">2</div>
+        <p>We call or text you with an exact quote — no hidden fees, no surprises.</p>
+      </div>
+      <div class="next-item">
+        <div class="next-num">3</div>
+        <p>Once you confirm, we schedule delivery. Same-day available if needed.</p>
+      </div>
+    </div>
+
+    <p style="font-size:0.95rem; color:var(--gray); margin-bottom:20px;">Need it faster? Call us now — we answer on the first ring.</p>
+    <a href="tel:6784563488" class="cta-phone">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      (678) 456-3488
+    </a>
+    <p class="phone-note">Mon–Sat 6AM–8PM · Emergency line 24/7</p>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 Patriot Portables · Cumming, GA · <a href="tel:6784563488">(678) 456-3488</a></p>
+  <p style="margin-top:6px;">Woman-Owned · Veteran-Supported · Licensed & Insured</p>
+</footer>
+
+</body>
+</html>

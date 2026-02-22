@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monthly Porta Potty Rental Atlanta | Pricing & Rates | Patriot Portables</title>
+<meta name="description" content="Transparent monthly porta potty rental pricing in Metro Atlanta. No hidden fees. Weekly servicing included. Call (678) 456-3488 for a fast quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue: #1B4FA8; --blue-dark: #0D2B6B; --blue-mid: #163F8A;
+    --red: #C8102E; --red-dark: #9E0B24;
+    --white: #FFFFFF; --off-white: #F4F7FC; --gray: #6B7280;
+    --light-gray: #E5E7EB; --dark-text: #0D1F3C;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Source Sans 3', sans-serif; background: var(--off-white); color: var(--dark-text); overflow-x: hidden; }
+  .top-bar { background: var(--blue); color: white; text-align: center; padding: 10px 20px; font-family: 'Oswald', sans-serif; font-size: 0.9rem; letter-spacing: 0.06em; }
+  .site-header { background: white; padding: 14px 32px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--light-gray); flex-wrap: wrap; gap: 12px; }
+  .site-header img { height: 60px; }
+  .header-phone { background: var(--red); color: white; font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 12px 24px; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+  .header-phone:hover { background: var(--red-dark); }
+  .urgency-bar { background: var(--blue); color: white; text-align: center; padding: 10px 20px; font-family: 'Oswald', sans-serif; font-size: 0.95rem; letter-spacing: 0.04em; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: center; gap: 12px; }
+  .urgency-bar a { color: #FFD0D0; font-weight: 700; text-decoration: none; }
+
+  /* HERO */
+  .hero { background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%); padding: 64px 20px 72px; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(255,255,255,0.02) 40px, rgba(255,255,255,0.02) 41px); }
+  .hero-inner { max-width: 920px; margin: 0 auto; position: relative; z-index: 1; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.9); font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 14px; border-radius: 3px; margin-bottom: 20px; }
+  .hero h1 { font-family: 'Oswald', sans-serif; font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 700; color: white; line-height: 1.1; text-transform: uppercase; margin-bottom: 20px; }
+  .hero h1 span { color: #FFD0D0; }
+  .hero-sub { color: rgba(255,255,255,0.8); font-size: 1.1rem; line-height: 1.65; margin-bottom: 32px; max-width: 540px; }
+  .hero-cta-group { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--red); color: white; font-family: 'Oswald', sans-serif; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; padding: 16px 32px; border-radius: 4px; text-decoration: none; transition: background 0.2s, transform 0.1s; box-shadow: 0 4px 20px rgba(200,16,46,0.4); }
+  .btn-primary:hover { background: var(--red-dark); transform: translateY(-1px); }
+  .btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: transparent; border: 2px solid rgba(255,255,255,0.3); color: white; font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; padding: 14px 28px; border-radius: 4px; text-decoration: none; transition: border-color 0.2s, background 0.2s; }
+  .btn-secondary:hover { border-color: white; background: rgba(255,255,255,0.08); }
+  .hero-trust { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 36px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.12); }
+  .trust-item { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.7); font-size: 0.9rem; }
+  .hero-phone-box { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 28px 24px; text-align: center; min-width: 200px; }
+  .hero-phone-box .label { font-family: 'Oswald', sans-serif; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #FFD0D0; margin-bottom: 10px; }
+  .hero-phone-box .number { font-family: 'Oswald', sans-serif; font-size: 1.5rem; font-weight: 700; color: white; text-decoration: none; display: block; margin-bottom: 8px; }
+  .hero-phone-box .number:hover { color: #FFD0D0; }
+
+  /* PROOF STRIP */
+  .proof-strip { background: var(--blue-dark); padding: 20px; display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+  .proof-stat { text-align: center; color: white; }
+  .proof-stat .number { font-family: 'Oswald', sans-serif; font-size: 2rem; font-weight: 700; color: #FFD0D0; line-height: 1; }
+  .proof-stat .desc { font-size: 0.8rem; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
+
+  /* SECTIONS */
+  .section-inner { max-width: 920px; margin: 0 auto; }
+  .section-label { font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--red); margin-bottom: 12px; }
+  .section-title { font-family: 'Oswald', sans-serif; font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 700; color: var(--dark-text); text-transform: uppercase; line-height: 1.1; margin-bottom: 48px; }
+
+  /* PRICING */
+  .pricing-section { background: white; padding: 70px 20px; }
+  .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+  .pricing-card { border: 2px solid var(--light-gray); border-radius: 8px; padding: 32px 28px; position: relative; transition: border-color 0.2s, box-shadow 0.2s; }
+  .pricing-card:hover { border-color: var(--blue); box-shadow: 0 4px 24px rgba(27,79,168,0.1); }
+  .pricing-card.featured { border-color: var(--blue); box-shadow: 0 4px 24px rgba(27,79,168,0.15); }
+  .pricing-card .badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--blue); color: white; font-family: 'Oswald', sans-serif; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 14px; border-radius: 20px; white-space: nowrap; }
+  .pricing-card .plan-name { font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gray); margin-bottom: 12px; }
+  .pricing-card .price { font-family: 'Oswald', sans-serif; font-size: 2.6rem; font-weight: 700; color: var(--dark-text); line-height: 1; margin-bottom: 4px; }
+  .pricing-card .price-sub { font-size: 0.85rem; color: var(--gray); margin-bottom: 24px; }
+  .pricing-card ul { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+  .pricing-card ul li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.9rem; color: var(--dark-text); }
+  .pricing-card ul li::before { content: '✓'; color: var(--blue); font-weight: 700; flex-shrink: 0; }
+  .pricing-cta { display: block; width: 100%; text-align: center; background: var(--blue); color: white; font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 14px; border-radius: 4px; text-decoration: none; transition: background 0.2s; }
+  .pricing-cta:hover { background: var(--blue-dark); }
+  .pricing-card.featured .pricing-cta { background: var(--red); }
+  .pricing-card.featured .pricing-cta:hover { background: var(--red-dark); }
+  .pricing-note { text-align: center; margin-top: 28px; color: var(--gray); font-size: 0.9rem; }
+  .pricing-note strong { color: var(--dark-text); }
+
+  /* WHATS INCLUDED */
+  .included-section { background: var(--off-white); padding: 70px 20px; }
+  .included-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+  .included-item { background: white; border-radius: 6px; padding: 24px 20px; text-align: center; }
+  .included-item .icon { font-size: 2rem; margin-bottom: 12px; }
+  .included-item h3 { font-family: 'Oswald', sans-serif; font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--dark-text); margin-bottom: 8px; }
+  .included-item p { font-size: 0.85rem; color: var(--gray); line-height: 1.5; }
+
+  /* FORM */
+  .form-section { background: white; padding: 70px 20px; }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; max-width: 920px; margin: 0 auto; align-items: start; }
+  .form-left p { color: var(--gray); font-size: 1rem; line-height: 1.7; margin-bottom: 28px; }
+  .check-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .check-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; color: var(--dark-text); }
+  .check-list li::before { content: ''; width: 20px; height: 20px; background: var(--blue); border-radius: 50%; flex-shrink: 0; margin-top: 1px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E"); background-size: cover; }
+  .quote-form { background: var(--off-white); border-radius: 8px; padding: 36px; border-top: 4px solid var(--blue); }
+  .quote-form h3 { font-family: 'Oswald', sans-serif; font-size: 1.3rem; font-weight: 700; text-transform: uppercase; color: var(--dark-text); margin-bottom: 24px; }
+  .form-group { margin-bottom: 16px; }
+  .form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--dark-text); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 14px; border: 1.5px solid var(--light-gray); border-radius: 4px; font-family: 'Source Sans 3', sans-serif; font-size: 0.95rem; color: var(--dark-text); background: white; transition: border-color 0.2s; -webkit-appearance: none; appearance: none; }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--blue); }
+  .form-group textarea { resize: vertical; min-height: 80px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .submit-btn { width: 100%; background: var(--red); color: white; border: none; padding: 16px; font-family: 'Oswald', sans-serif; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; border-radius: 4px; cursor: pointer; margin-top: 8px; transition: background 0.2s; box-shadow: 0 4px 16px rgba(200,16,46,0.3); }
+  .submit-btn:hover { background: var(--red-dark); }
+  .form-disclaimer { font-size: 0.78rem; color: var(--gray); text-align: center; margin-top: 12px; }
+
+  /* TESTIMONIALS */
+  .testimonials-section { background: var(--off-white); padding: 70px 20px; }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+  .testimonial { background: white; border-radius: 6px; padding: 28px; border-left: 4px solid var(--blue); }
+  .stars { color: #F59E0B; font-size: 1rem; margin-bottom: 14px; letter-spacing: 2px; }
+  .testimonial blockquote { font-size: 0.95rem; color: var(--dark-text); line-height: 1.7; font-style: italic; margin-bottom: 16px; }
+  .testimonial-author { font-size: 0.85rem; font-weight: 600; color: var(--gray); text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* BOTTOM CTA */
+  .bottom-cta { background: var(--red); padding: 60px 20px; text-align: center; }
+  .bottom-cta h2 { font-family: 'Oswald', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 700; color: white; text-transform: uppercase; margin-bottom: 12px; }
+  .bottom-cta p { color: rgba(255,255,255,0.85); font-size: 1.1rem; margin-bottom: 32px; }
+  .btn-white { display: inline-flex; align-items: center; gap: 10px; background: white; color: var(--red); font-family: 'Oswald', sans-serif; font-size: 1.2rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 40px; border-radius: 4px; text-decoration: none; transition: transform 0.15s; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+  .btn-white:hover { transform: translateY(-2px); }
+  footer { background: var(--blue-dark); padding: 28px 20px; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem; }
+  footer a { color: rgba(255,255,255,0.6); }
+  .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+  @media (max-width: 700px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-phone-box { display: none; }
+    .form-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .proof-strip { gap: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">Support Our Heroes: Proceeds Benefit Wounded Warriors &nbsp;|&nbsp; Locally Owned &nbsp;|&nbsp; Same Day Delivery</div>
+
+<header class="site-header">
+  <img src="https://www.patriotportables.com/logo.png" alt="Patriot Portables" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+  <div style="display:none; font-family:'Oswald',sans-serif; font-size:1.4rem; font-weight:700; color:var(--blue);">PATRIOT PORTABLES</div>
+  <a href="tel:6784563488" class="header-phone">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    678-456-3488
+  </a>
+</header>
+
+<div class="urgency-bar">
+  <span>Transparent monthly pricing · No hidden fees · We answer on the first ring —</span>
+  <a href="tel:6784563488">(678) 456-3488</a>
+</div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">Monthly Porta Potty Rental · Metro Atlanta</div>
+      <h1>Honest Pricing.<br><span>No Surprises. Ever.</span></h1>
+      <p class="hero-sub">Tired of porta potty companies that bury fees in the fine print? Patriot Portables gives you a clear monthly rate upfront — delivery, weekly servicing, pickup, and supplies all included. What we quote is what you pay.</p>
+      <div class="hero-cta-group">
+        <a href="tel:6784563488" class="btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Call for Pricing: (678) 456-3488
+        </a>
+        <a href="#quote-form" class="btn-secondary">Get a Written Quote</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">✓ No hidden fees — ever</div>
+        <div class="trust-item">✓ Weekly servicing included</div>
+        <div class="trust-item">✓ No long-term contracts required</div>
+        <div class="trust-item">✓ Cancel with notice — no penalties</div>
+      </div>
+    </div>
+    <div class="hero-phone-box">
+      <div class="label">Get a Quote Now</div>
+      <a href="tel:6784563488" class="number">(678) 456-3488</a>
+      <div style="font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:8px;">We answer on the first ring</div>
+      <div style="margin-top:16px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.1);">
+        <div style="font-size:0.75rem; color:rgba(255,255,255,0.4); margin-bottom:6px;">Hours</div>
+        <div style="font-family:'Oswald',sans-serif; color:white; font-size:0.9rem;">Mon–Sat 6AM–8PM</div>
+        <div style="font-family:'Oswald',sans-serif; color:white; font-size:0.9rem;">Emergency 24/7</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="proof-strip">
+  <div class="proof-stat"><div class="number">All-In</div><div class="desc">Pricing — No Surprises</div></div>
+  <div class="proof-stat"><div class="number">Weekly</div><div class="desc">Servicing Included</div></div>
+  <div class="proof-stat"><div class="number">Same Day</div><div class="desc">Setup Available</div></div>
+  <div class="proof-stat"><div class="number">No</div><div class="desc">Long-Term Contracts</div></div>
+</div>
+
+<!-- PRICING -->
+<section class="pricing-section">
+  <div class="section-inner fade-in">
+    <div class="section-label">Rental options</div>
+    <div class="section-title">Simple. Transparent.<br>All-Inclusive Pricing.</div>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="plan-name">Standard Unit</div>
+        <div class="price">Call Us</div>
+        <div class="price-sub">for exact monthly pricing</div>
+        <ul>
+          <li>Standard porta potty unit</li>
+          <li>Weekly servicing included</li>
+          <li>All supplies stocked</li>
+          <li>Delivery & pickup included</li>
+          <li>Hand sanitizer dispenser</li>
+        </ul>
+        <a href="tel:6784563488" class="pricing-cta">Call for Pricing</a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="badge">Most Popular</div>
+        <div class="plan-name">Deluxe Unit</div>
+        <div class="price">Call Us</div>
+        <div class="price-sub">for exact monthly pricing</div>
+        <ul>
+          <li>Deluxe porta potty unit</li>
+          <li>Weekly servicing included</li>
+          <li>Premium supply restocking</li>
+          <li>Delivery & pickup included</li>
+          <li>Hand sanitizer + amenities</li>
+          <li>Best choice for job sites</li>
+        </ul>
+        <a href="tel:6784563488" class="pricing-cta">Call for Pricing</a>
+      </div>
+      <div class="pricing-card">
+        <div class="plan-name">ADA Compliant Unit</div>
+        <div class="price">Call Us</div>
+        <div class="price-sub">for exact monthly pricing</div>
+        <ul>
+          <li>Fully ADA compliant unit</li>
+          <li>Meets OSHA requirements</li>
+          <li>Weekly servicing included</li>
+          <li>All supplies stocked</li>
+          <li>Delivery & pickup included</li>
+        </ul>
+        <a href="tel:6784563488" class="pricing-cta">Call for Pricing</a>
+      </div>
+    </div>
+    <p class="pricing-note">
+      <strong>Need multiple units?</strong> We offer volume discounts for 3+ units at the same location. 
+      Managing multiple job sites? Ask about our multi-site billing program. 
+      Call <strong>(678) 456-3488</strong> for a custom quote.
+    </p>
+  </div>
+</section>
+
+<!-- WHATS INCLUDED -->
+<section class="included-section">
+  <div class="section-inner fade-in">
+    <div class="section-label">All-in pricing means</div>
+    <div class="section-title">Everything Included.<br>No Line-Item Surprises.</div>
+    <div class="included-grid">
+      <div class="included-item"><div class="icon">🚚</div><h3>Delivery & Setup</h3><p>We deliver and place the unit exactly where you need it. No delivery fee tacked on at checkout.</p></div>
+      <div class="included-item"><div class="icon">🧼</div><h3>Weekly Servicing</h3><p>Pump-out, cleaning, and restocking every week on a scheduled day. Always fresh, always stocked.</p></div>
+      <div class="included-item"><div class="icon">🧻</div><h3>All Supplies</h3><p>Toilet paper, hand sanitizer, deodorizer — all replenished every service visit. Nothing extra to buy.</p></div>
+      <div class="included-item"><div class="icon">📦</div><h3>Pickup Included</h3><p>When your rental period ends, we come get it. No surprise pickup fees on your final invoice.</p></div>
+      <div class="included-item"><div class="icon">📞</div><h3>Responsive Service</h3><p>Need an extra service visit? Unit moved? Call us — we answer on the first ring and handle it fast.</p></div>
+      <div class="included-item"><div class="icon">📋</div><h3>Simple Invoicing</h3><p>One clear invoice per billing period. Multiple sites billed separately or combined — your choice.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section" id="quote-form">
+  <div class="form-grid fade-in">
+    <div class="form-left">
+      <div class="section-label">Get a written quote</div>
+      <div class="section-title" style="margin-bottom:20px;">Exact Pricing<br>in Minutes.</div>
+      <p>Fill out the form and we'll get back to you quickly with exact pricing for your situation. Prefer to talk? Call <strong>(678) 456-3488</strong> and we can quote you over the phone right now.</p>
+      <ul class="check-list" style="margin-top:24px;">
+        <li>All-inclusive monthly pricing</li>
+        <li>Volume discounts for 3+ units</li>
+        <li>Multi-site billing available</li>
+        <li>No long-term contracts required</li>
+        <li>Flexible start dates</li>
+        <li>Same-day setup available</li>
+      </ul>
+    </div>
+    <div>
+      <div class="quote-form">
+        <h3>Get a Written Quote</h3>
+        <form action="https://formspree.io/f/xjgepbqq" method="POST">
+          <div class="form-row">
+            <div class="form-group"><label>First Name *</label><input type="text" name="first_name" placeholder="John" required></div>
+            <div class="form-group"><label>Last Name *</label><input type="text" name="last_name" placeholder="Smith" required></div>
+          </div>
+          <div class="form-group"><label>Phone Number *</label><input type="tel" name="phone" placeholder="(678) 000-0000" required></div>
+          <div class="form-group"><label>Company (if applicable)</label><input type="text" name="company" placeholder="Smith Construction LLC"></div>
+          <div class="form-group"><label>Delivery Location / City *</label><input type="text" name="location" placeholder="Alpharetta, GA" required></div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Units Needed</label>
+              <select name="units">
+                <option value="">Select...</option>
+                <option>1 Unit</option><option>2 Units</option><option>3 Units</option><option>4–5 Units</option><option>6–10 Units</option><option>10+ Units</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Rental Duration</label>
+              <select name="duration">
+                <option value="">Select...</option>
+                <option>1 Month</option><option>2–3 Months</option><option>3–6 Months</option><option>6–12 Months</option><option>12+ Months</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Unit Type Needed</label>
+            <select name="unit_type">
+              <option value="">Select...</option>
+              <option>Standard Unit</option><option>Deluxe Unit</option><option>ADA Compliant</option><option>Not Sure — Advise Me</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Additional Details</label><textarea name="message" placeholder="e.g. Construction site, 2 units needed starting March 1st, Alpharetta area..."></textarea></div>
+          <input type="hidden" name="_next" value="https://emergency.patriotportables.com/thank-you">
+          <button type="submit" class="submit-btn">Get My Written Quote →</button>
+          <p class="form-disclaimer">No spam. We'll only contact you about your rental request.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section">
+  <div class="section-inner fade-in">
+    <div class="section-label">What customers say</div>
+    <div class="section-title">No Surprises. No Hassle.<br>Just Clean.</div>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Every porta potty company I've used before had mysterious charges on the invoice. Patriot quoted me a price and that's exactly what I paid. Simple, honest, and the units are always clean."</blockquote>
+        <div class="testimonial-author">Robert H. — Property Manager, Roswell</div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <blockquote>"We've been on a monthly rental for six months. Service shows up every week without us having to chase anyone. That alone makes Patriot worth every penny."</blockquote>
+        <div class="testimonial-author">Lisa M. — Project Superintendent, Johns Creek</div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <blockquote>"I manage multiple construction sites and Patriot handles all of them. Separate invoices for each site, one phone number to call. It's exactly what a busy contractor needs."</blockquote>
+        <div class="testimonial-author">Tony B. — Multi-Site Builder, Canton, GA</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bottom-cta">
+  <h2>Get Your All-In Quote Today.</h2>
+  <p>Transparent pricing. No hidden fees. We answer on the first ring. Serving Metro Atlanta.</p>
+  <a href="tel:6784563488" class="btn-white">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    (678) 456-3488
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Patriot Portables · Cumming, GA · Serving Metro Atlanta · <a href="tel:6784563488">(678) 456-3488</a></p>
+  <p style="margin-top:6px;">Woman-Owned · Veteran-Supported · Licensed & Insured</p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => entries.forEach(el => { if (el.isIntersecting) el.target.classList.add('visible'); }), { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

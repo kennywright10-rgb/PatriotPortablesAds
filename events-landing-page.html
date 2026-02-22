@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Porta Potty Rental Atlanta | Festivals, Parties & Outdoor Events | Patriot Portables</title>
+<meta name="description" content="Clean porta potty rentals for outdoor events across Metro Atlanta. Festivals, parties, concerts, and more. Same-day available. Call (678) 456-3488.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue: #1B4FA8; --blue-dark: #0D2B6B; --blue-mid: #163F8A;
+    --red: #C8102E; --red-dark: #9E0B24;
+    --white: #FFFFFF; --off-white: #F4F7FC; --gray: #6B7280;
+    --light-gray: #E5E7EB; --dark-text: #0D1F3C;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Source Sans 3', sans-serif; background: var(--off-white); color: var(--dark-text); overflow-x: hidden; }
+  .top-bar { background: var(--blue); color: white; text-align: center; padding: 10px 20px; font-family: 'Oswald', sans-serif; font-size: 0.9rem; letter-spacing: 0.06em; }
+  .site-header { background: white; padding: 14px 32px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--light-gray); flex-wrap: wrap; gap: 12px; }
+  .site-header img { height: 60px; }
+  .header-phone { background: var(--red); color: white; font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 12px 24px; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+  .header-phone:hover { background: var(--red-dark); }
+  .urgency-bar { background: var(--blue); color: white; text-align: center; padding: 10px 20px; font-family: 'Oswald', sans-serif; font-size: 0.95rem; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: center; gap: 12px; }
+  .urgency-bar a { color: #FFD0D0; font-weight: 700; text-decoration: none; }
+
+  /* HERO */
+  .hero { background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%); padding: 64px 20px 72px; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(255,255,255,0.02) 40px, rgba(255,255,255,0.02) 41px); }
+  .hero-inner { max-width: 920px; margin: 0 auto; position: relative; z-index: 1; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.9); font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 14px; border-radius: 3px; margin-bottom: 20px; }
+  .hero h1 { font-family: 'Oswald', sans-serif; font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 700; color: white; line-height: 1.1; text-transform: uppercase; margin-bottom: 20px; }
+  .hero h1 span { color: #FFD0D0; }
+  .hero-sub { color: rgba(255,255,255,0.8); font-size: 1.1rem; line-height: 1.65; margin-bottom: 32px; max-width: 540px; }
+  .hero-cta-group { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--red); color: white; font-family: 'Oswald', sans-serif; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; padding: 16px 32px; border-radius: 4px; text-decoration: none; transition: background 0.2s, transform 0.1s; box-shadow: 0 4px 20px rgba(200,16,46,0.4); }
+  .btn-primary:hover { background: var(--red-dark); transform: translateY(-1px); }
+  .btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: transparent; border: 2px solid rgba(255,255,255,0.3); color: white; font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; padding: 14px 28px; border-radius: 4px; text-decoration: none; transition: border-color 0.2s, background 0.2s; }
+  .btn-secondary:hover { border-color: white; background: rgba(255,255,255,0.08); }
+  .hero-trust { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 36px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.12); }
+  .trust-item { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.7); font-size: 0.9rem; }
+  .hero-phone-box { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 28px 24px; text-align: center; min-width: 200px; }
+  .hero-phone-box .label { font-family: 'Oswald', sans-serif; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #FFD0D0; margin-bottom: 10px; }
+  .hero-phone-box .number { font-family: 'Oswald', sans-serif; font-size: 1.5rem; font-weight: 700; color: white; text-decoration: none; display: block; margin-bottom: 8px; }
+  .hero-phone-box .number:hover { color: #FFD0D0; }
+
+  /* PROOF STRIP */
+  .proof-strip { background: var(--blue-dark); padding: 20px; display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+  .proof-stat { text-align: center; color: white; }
+  .proof-stat .number { font-family: 'Oswald', sans-serif; font-size: 2rem; font-weight: 700; color: #FFD0D0; line-height: 1; }
+  .proof-stat .desc { font-size: 0.8rem; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
+
+  /* SECTIONS */
+  .section-inner { max-width: 920px; margin: 0 auto; }
+  .section-label { font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--red); margin-bottom: 12px; }
+  .section-title { font-family: 'Oswald', sans-serif; font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 700; color: var(--dark-text); text-transform: uppercase; line-height: 1.1; margin-bottom: 48px; }
+
+  /* EVENT TYPES */
+  .events-section { background: white; padding: 70px 20px; }
+  .events-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; }
+  .event-card { background: var(--off-white); border-radius: 8px; padding: 28px 20px; text-align: center; border-bottom: 3px solid var(--blue); transition: transform 0.2s, box-shadow 0.2s; }
+  .event-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(27,79,168,0.12); }
+  .event-card .icon { font-size: 2.2rem; margin-bottom: 12px; }
+  .event-card h3 { font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--dark-text); }
+
+  /* CALCULATOR */
+  .calculator-section { background: var(--off-white); padding: 70px 20px; }
+  .calculator-box { background: white; border-radius: 8px; padding: 40px; border-top: 4px solid var(--blue); max-width: 620px; margin: 0 auto; box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
+  .calculator-box h3 { font-family: 'Oswald', sans-serif; font-size: 1.4rem; font-weight: 700; text-transform: uppercase; color: var(--dark-text); margin-bottom: 8px; }
+  .calculator-box p { color: var(--gray); font-size: 0.95rem; margin-bottom: 28px; }
+  .calc-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .calc-group label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--dark-text); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .calc-group input, .calc-group select { width: 100%; padding: 12px 14px; border: 1.5px solid var(--light-gray); border-radius: 4px; font-family: 'Source Sans 3', sans-serif; font-size: 1rem; color: var(--dark-text); -webkit-appearance: none; appearance: none; }
+  .calc-group input:focus, .calc-group select:focus { outline: none; border-color: var(--blue); }
+  .calc-result { background: var(--blue); color: white; border-radius: 6px; padding: 20px 24px; margin-top: 20px; display: none; }
+  .calc-result.show { display: block; }
+  .calc-result .result-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.7); margin-bottom: 4px; }
+  .calc-result .result-value { font-family: 'Oswald', sans-serif; font-size: 2rem; font-weight: 700; color: white; }
+  .calc-result .result-note { font-size: 0.85rem; color: rgba(255,255,255,0.7); margin-top: 6px; }
+  .calc-btn { width: 100%; background: var(--red); color: white; border: none; padding: 14px; font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; border-radius: 4px; cursor: pointer; margin-top: 8px; transition: background 0.2s; }
+  .calc-btn:hover { background: var(--red-dark); }
+
+  /* WHAT WE HANDLE */
+  .handles-section { background: white; padding: 70px 20px; }
+  .handles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+  .handle-item { display: flex; gap: 16px; align-items: flex-start; }
+  .handle-num { font-family: 'Oswald', sans-serif; font-size: 2.5rem; font-weight: 700; color: var(--light-gray); line-height: 1; flex-shrink: 0; width: 52px; }
+  .handle-item h3 { font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--dark-text); margin-bottom: 6px; }
+  .handle-item p { font-size: 0.9rem; color: var(--gray); line-height: 1.6; }
+
+  /* FORM */
+  .form-section { background: var(--off-white); padding: 70px 20px; }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; max-width: 920px; margin: 0 auto; align-items: start; }
+  .form-left p { color: var(--gray); font-size: 1rem; line-height: 1.7; margin-bottom: 28px; }
+  .check-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .check-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; color: var(--dark-text); }
+  .check-list li::before { content: ''; width: 20px; height: 20px; background: var(--blue); border-radius: 50%; flex-shrink: 0; margin-top: 1px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E"); background-size: cover; }
+  .quote-form { background: white; border-radius: 8px; padding: 36px; border-top: 4px solid var(--blue); box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
+  .quote-form h3 { font-family: 'Oswald', sans-serif; font-size: 1.3rem; font-weight: 700; text-transform: uppercase; color: var(--dark-text); margin-bottom: 24px; }
+  .form-group { margin-bottom: 16px; }
+  .form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--dark-text); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 14px; border: 1.5px solid var(--light-gray); border-radius: 4px; font-family: 'Source Sans 3', sans-serif; font-size: 0.95rem; color: var(--dark-text); background: white; transition: border-color 0.2s; -webkit-appearance: none; appearance: none; }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--blue); }
+  .form-group textarea { resize: vertical; min-height: 80px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .submit-btn { width: 100%; background: var(--red); color: white; border: none; padding: 16px; font-family: 'Oswald', sans-serif; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; border-radius: 4px; cursor: pointer; margin-top: 8px; transition: background 0.2s; box-shadow: 0 4px 16px rgba(200,16,46,0.3); }
+  .submit-btn:hover { background: var(--red-dark); }
+  .form-disclaimer { font-size: 0.78rem; color: var(--gray); text-align: center; margin-top: 12px; }
+
+  /* TESTIMONIALS */
+  .testimonials-section { background: white; padding: 70px 20px; }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+  .testimonial { background: var(--off-white); border-radius: 6px; padding: 28px; border-left: 4px solid var(--blue); }
+  .stars { color: #F59E0B; font-size: 1rem; margin-bottom: 14px; letter-spacing: 2px; }
+  .testimonial blockquote { font-size: 0.95rem; color: var(--dark-text); line-height: 1.7; font-style: italic; margin-bottom: 16px; }
+  .testimonial-author { font-size: 0.85rem; font-weight: 600; color: var(--gray); text-transform: uppercase; letter-spacing: 0.05em; }
+
+  .bottom-cta { background: var(--red); padding: 60px 20px; text-align: center; }
+  .bottom-cta h2 { font-family: 'Oswald', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 700; color: white; text-transform: uppercase; margin-bottom: 12px; }
+  .bottom-cta p { color: rgba(255,255,255,0.85); font-size: 1.1rem; margin-bottom: 32px; }
+  .btn-white { display: inline-flex; align-items: center; gap: 10px; background: white; color: var(--red); font-family: 'Oswald', sans-serif; font-size: 1.2rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 40px; border-radius: 4px; text-decoration: none; transition: transform 0.15s; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+  .btn-white:hover { transform: translateY(-2px); }
+  footer { background: var(--blue-dark); padding: 28px 20px; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem; }
+  footer a { color: rgba(255,255,255,0.6); }
+  .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+  @media (max-width: 700px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-phone-box { display: none; }
+    .form-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .calc-row { grid-template-columns: 1fr; }
+    .proof-strip { gap: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">Support Our Heroes: Proceeds Benefit Wounded Warriors &nbsp;|&nbsp; Locally Owned &nbsp;|&nbsp; Same Day Delivery</div>
+
+<header class="site-header">
+  <img src="https://www.patriotportables.com/logo.png" alt="Patriot Portables" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+  <div style="display:none; font-family:'Oswald',sans-serif; font-size:1.4rem; font-weight:700; color:var(--blue);">PATRIOT PORTABLES</div>
+  <a href="tel:6784563488" class="header-phone">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    678-456-3488
+  </a>
+</header>
+
+<div class="urgency-bar">
+  <span>Planning an event? Book early — weekends fill fast —</span>
+  <a href="tel:6784563488">(678) 456-3488</a>
+</div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">Event Porta Potty Rental · Metro Atlanta</div>
+      <h1>Clean Restrooms.<br><span>Happy Guests.</span></h1>
+      <p class="hero-sub">Don't let restrooms be the thing your guests remember. Patriot Portables delivers <strong style="color:white;">sparkling clean</strong> portable restrooms for outdoor events across Metro Atlanta — festivals, parties, concerts, fundraisers, and more.</p>
+      <div class="hero-cta-group">
+        <a href="tel:6784563488" class="btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Call Now: (678) 456-3488
+        </a>
+        <a href="#quote-form" class="btn-secondary">Get an Event Quote</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">✓ Sparkling clean · 10-point inspected</div>
+        <div class="trust-item">✓ ADA compliant available</div>
+        <div class="trust-item">✓ Hand wash stations available</div>
+        <div class="trust-item">✓ Weekend delivery available</div>
+      </div>
+    </div>
+    <div class="hero-phone-box">
+      <div class="label">Event Booking Line</div>
+      <a href="tel:6784563488" class="number">(678) 456-3488</a>
+      <div style="font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:8px;">We answer on the first ring</div>
+      <div style="margin-top:16px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.1);">
+        <div style="font-size:0.75rem; color:rgba(255,255,255,0.4); margin-bottom:6px;">Available</div>
+        <div style="font-family:'Oswald',sans-serif; color:white; font-size:0.9rem;">7 Days a Week</div>
+        <div style="font-family:'Oswald',sans-serif; color:white; font-size:0.9rem;">Weekends Available</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="proof-strip">
+  <div class="proof-stat"><div class="number">10-Point</div><div class="desc">Cleaning Every Unit</div></div>
+  <div class="proof-stat"><div class="number">ADA</div><div class="desc">Compliant Available</div></div>
+  <div class="proof-stat"><div class="number">Weekend</div><div class="desc">Delivery Available</div></div>
+  <div class="proof-stat"><div class="number">1st Ring</div><div class="desc">We Always Answer</div></div>
+</div>
+
+<!-- EVENT TYPES -->
+<section class="events-section">
+  <div class="section-inner fade-in">
+    <div class="section-label">Events we serve</div>
+    <div class="section-title">Whatever Your Event.<br>We've Got You Covered.</div>
+    <div class="events-grid">
+      <div class="event-card"><div class="icon">🎪</div><h3>Festivals</h3></div>
+      <div class="event-card"><div class="icon">🎵</div><h3>Concerts</h3></div>
+      <div class="event-card"><div class="icon">🏡</div><h3>Backyard Parties</h3></div>
+      <div class="event-card"><div class="icon">🙏</div><h3>Church Events</h3></div>
+      <div class="event-card"><div class="icon">🏈</div><h3>Sporting Events</h3></div>
+      <div class="event-card"><div class="icon">🎗️</div><h3>Fundraisers</h3></div>
+      <div class="event-card"><div class="icon">🌳</div><h3>Outdoor Markets</h3></div>
+      <div class="event-card"><div class="icon">🎓</div><h3>Graduation Parties</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- UNIT CALCULATOR -->
+<section class="calculator-section">
+  <div class="section-inner fade-in">
+    <div class="section-label">Planning tool</div>
+    <div class="section-title" style="text-align:center; margin-bottom:32px;">How Many Units<br>Do You Need?</div>
+    <div class="calculator-box">
+      <h3>Quick Unit Estimator</h3>
+      <p>Use this as a starting point — we'll confirm the right number for your specific event when you call.</p>
+      <div class="calc-row">
+        <div class="calc-group">
+          <label>Expected Attendance</label>
+          <input type="number" id="attendance" placeholder="e.g. 200" min="1">
+        </div>
+        <div class="calc-group">
+          <label>Event Duration</label>
+          <select id="duration">
+            <option value="2">Under 4 Hours</option>
+            <option value="1" selected>4–8 Hours</option>
+            <option value="0.75">8–12 Hours</option>
+            <option value="0.6">Full Day (12+ hrs)</option>
+          </select>
+        </div>
+      </div>
+      <div class="calc-row">
+        <div class="calc-group">
+          <label>Alcohol Served?</label>
+          <select id="alcohol">
+            <option value="1">No</option>
+            <option value="1.4">Yes</option>
+          </select>
+        </div>
+        <div class="calc-group">
+          <label>ADA Units Needed?</label>
+          <select id="ada">
+            <option value="0">No</option>
+            <option value="1">Yes — Add 1</option>
+            <option value="2">Yes — Add 2</option>
+          </select>
+        </div>
+      </div>
+      <button class="calc-btn" onclick="calculateUnits()">Calculate Units Needed</button>
+      <div class="calc-result" id="calc-result">
+        <div class="result-label">Recommended Units</div>
+        <div class="result-value" id="result-value">—</div>
+        <div class="result-note" id="result-note"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE HANDLE -->
+<section class="handles-section">
+  <div class="section-inner fade-in">
+    <div class="section-label">Our process</div>
+    <div class="section-title">We Handle Everything<br>So You Can Focus on Your Event.</div>
+    <div class="handles-grid">
+      <div class="handle-item">
+        <div class="handle-num">01</div>
+        <div><h3>Book Your Date</h3><p>Call or fill out the form. We confirm availability, recommend the right number of units, and lock in your date. Weekend slots fill fast — book early.</p></div>
+      </div>
+      <div class="handle-item">
+        <div class="handle-num">02</div>
+        <div><h3>Day-Before Setup</h3><p>We deliver and set up units the day before your event (or morning-of for same-day bookings). You choose placement — we make it happen.</p></div>
+      </div>
+      <div class="handle-item">
+        <div class="handle-num">03</div>
+        <div><h3>During Your Event</h3><p>For multi-day or large events, we can restock and service mid-event. Units stay clean and stocked throughout your entire event.</p></div>
+      </div>
+      <div class="handle-item">
+        <div class="handle-num">04</div>
+        <div><h3>Pickup After</h3><p>When your event wraps, we come pick everything up. No hassle, no phone chase, no cleanup left for you to deal with.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section" id="quote-form">
+  <div class="form-grid fade-in">
+    <div class="form-left">
+      <div class="section-label">Book your event</div>
+      <div class="section-title" style="margin-bottom:20px;">Get an Event<br>Quote Fast.</div>
+      <p>Tell us about your event and we'll get back to you quickly with a quote. Rather talk it through? Call <strong>(678) 456-3488</strong> — we answer on the first ring.</p>
+      <ul class="check-list" style="margin-top:24px;">
+        <li>Sparkling clean units — guaranteed</li>
+        <li>Delivery & pickup included</li>
+        <li>ADA compliant units available</li>
+        <li>Hand wash stations available</li>
+        <li>Weekend and holiday delivery</li>
+        <li>Mid-event restocking available</li>
+      </ul>
+    </div>
+    <div>
+      <div class="quote-form">
+        <h3>Request an Event Quote</h3>
+        <form action="https://formspree.io/f/xjgepbqq" method="POST">
+          <div class="form-row">
+            <div class="form-group"><label>First Name *</label><input type="text" name="first_name" placeholder="John" required></div>
+            <div class="form-group"><label>Last Name *</label><input type="text" name="last_name" placeholder="Smith" required></div>
+          </div>
+          <div class="form-group"><label>Phone Number *</label><input type="tel" name="phone" placeholder="(678) 000-0000" required></div>
+          <div class="form-group"><label>Event Location / City *</label><input type="text" name="location" placeholder="Alpharetta, GA" required></div>
+          <div class="form-row">
+            <div class="form-group"><label>Event Date *</label><input type="date" name="event_date" required></div>
+            <div class="form-group">
+              <label>Event Type</label>
+              <select name="event_type">
+                <option value="">Select...</option>
+                <option>Festival / Concert</option><option>Backyard Party</option><option>Church Event</option><option>Sporting Event</option><option>Fundraiser</option><option>Outdoor Market</option><option>Corporate Event</option><option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Expected Attendance</label>
+              <select name="attendance">
+                <option value="">Select...</option>
+                <option>Under 50</option><option>50–100</option><option>100–250</option><option>250–500</option><option>500–1,000</option><option>1,000+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Units Needed</label>
+              <select name="units">
+                <option value="">Not Sure — Advise Me</option>
+                <option>1 Unit</option><option>2 Units</option><option>3 Units</option><option>4–5 Units</option><option>6–10 Units</option><option>10+ Units</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group"><label>Additional Details</label><textarea name="message" placeholder="e.g. Outdoor festival, approx 300 guests, need units + hand wash stations, Alpharetta area..."></textarea></div>
+          <input type="hidden" name="_next" value="https://emergency.patriotportables.com/thank-you">
+          <button type="submit" class="submit-btn">Get My Event Quote →</button>
+          <p class="form-disclaimer">No spam. We'll only contact you about your rental request.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section">
+  <div class="section-inner fade-in">
+    <div class="section-label">What event planners say</div>
+    <div class="section-title">Events Remember.<br>Make It Count.</div>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <blockquote>"We host an annual community festival with 500+ guests. Patriot Portables has handled our restrooms for three years running. Units are always clean, delivery is always on time, and pickup is seamless."</blockquote>
+        <div class="testimonial-author">Karen W. — Event Coordinator, Cumming, GA</div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <blockquote>"I've planned dozens of outdoor events and restrooms are always the thing that goes wrong. Not with Patriot. They showed up, set up perfectly, and I didn't have to think about it again."</blockquote>
+        <div class="testimonial-author">Angela T. — Corporate Event Planner, Alpharetta</div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Our church hosts an annual outdoor service for 300 people. Patriot Portables made the restroom situation completely stress-free. Clean units, great service, fair price."</blockquote>
+        <div class="testimonial-author">Pastor Greg M. — Forsyth County, GA</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bottom-cta">
+  <h2>Book Your Event Date Today.</h2>
+  <p>Weekends fill fast. Call now to lock in your date. We answer on the first ring.</p>
+  <a href="tel:6784563488" class="btn-white">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    (678) 456-3488
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Patriot Portables · Cumming, GA · Serving Metro Atlanta · <a href="tel:6784563488">(678) 456-3488</a></p>
+  <p style="margin-top:6px;">Woman-Owned · Veteran-Supported · Licensed & Insured</p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => entries.forEach(el => { if (el.isIntersecting) el.target.classList.add('visible'); }), { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  function calculateUnits() {
+    const attendance = parseInt(document.getElementById('attendance').value) || 0;
+    const duration = parseFloat(document.getElementById('duration').value);
+    const alcohol = parseFloat(document.getElementById('alcohol').value);
+    const ada = parseInt(document.getElementById('ada').value);
+    if (!attendance) { alert('Please enter your expected attendance.'); return; }
+    let units = Math.ceil((attendance / 100) * duration * alcohol) + ada;
+    units = Math.max(1, units);
+    const result = document.getElementById('calc-result');
+    document.getElementById('result-value').textContent = units + ' Unit' + (units !== 1 ? 's' : '');
+    document.getElementById('result-note').textContent = 'This is an estimate. Call us at (678) 456-3488 to confirm the right count for your specific event.';
+    result.classList.add('show');
+  }
+</script>
+</body>
+</html>
