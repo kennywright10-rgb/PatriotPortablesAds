@@ -1,10 +1,28 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/emergency-landing-page.html" },
-    { "source": "/emergency", "destination": "/emergency-landing-page.html" },
-    { "source": "/construction", "destination": "/construction-landing-page.html" },
-    { "source": "/long-term-rental", "destination": "/long-term-rental-landing-page.html" },
-    { "source": "/events", "destination": "/events-landing-page.html" },
-    { "source": "/thank-you", "destination": "/thank-you.html" }
+    {
+      "source": "/emergency",
+      "destination": "/emergency-seo-page.html"
+    },
+    {
+      "source": "/same-day",
+      "destination": "/same-day-landing-page.html"
+    },
+    {
+      "source": "/construction",
+      "destination": "/construction-landing-page.html"
+    },
+    {
+      "source": "/long-term-rental",
+      "destination": "/long-term-rental-landing-page.html"
+    },
+    {
+      "source": "/events",
+      "destination": "/events-landing-page.html"
+    },
+    {
+      "source": "/thank-you",
+      "destination": "/thank-you.html"
+    }
   ]
 }
