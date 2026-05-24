@@ -59,6 +59,10 @@
     {
       "source": "/porta-potty-rental-buford-ga",
       "destination": "/porta-potty-rental-buford-ga.html"
+    },
+    {
+      "source": "/atlanta/metro",
+      "destination": "/atlanta-metro.html"
     }
   ]
 }
